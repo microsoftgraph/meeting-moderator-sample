@@ -1,0 +1,115 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.6",
+    "version": "1.0.0",
+    "showLoadingIndicator": false,
+    "id": "{{APP_ID}}",
+    "packageName": "com.microsoft.teams.moderator",
+    "developer": {
+        "name": "beth-panx",
+        "websiteUrl": "https://{{YOUR_DOMAIN}}.azurewebsites.net",
+        "privacyUrl": "https://{{YOUR_DOMAIN}}.azurewebsites.net/privacy.html",
+        "termsOfUseUrl": "https://{{YOUR_DOMAIN}}.azurewebsites.net/tou.html"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Moderator",
+        "full": "Moderator Bot"
+    },
+    "description": {
+        "short": "Moderator bot that manages question queues.",
+        "full": "Moderator bot that allows users to mention the bot and ask a question."
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "{{BOT_ID}}",
+            "scopes": [
+                "personal",
+                "groupchat",
+                "team"
+            ],
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "MentionMe",
+                            "description": "Sends message with @mention of the sender"
+                        },
+                        {
+                            "title": "Show Welcome",
+                            "description": "Shows the welcome card"
+                        },
+                        {
+                            "title": "MessageAllMembers",
+                            "description": "Send 1 to 1 message to all members of the current conversation"
+                        },
+                        {
+                            "title": "🤚Post A Question",
+                            "description": "Send a question to the moderator managed queue"
+                        }
+                    ]
+                },
+                {
+                    "scopes": [
+                        "team"
+                    ],
+                    "commands": [
+                        {
+                            "title": "MentionMe",
+                            "description": "Sends message with @mention of the sender"
+                        },
+                        {
+                            "title": "Show Welcome",
+                            "description": "Shows the welcome card"
+                        },
+                        {
+                            "title": "MessageAllMembers",
+                            "description": "Send 1 to 1 message to all members of the current conversation"
+                        },
+                        {
+                            "title": "🤚Post A Question",
+                            "description": "Send a question to the moderator managed queue"
+                        }
+                    ]
+                },
+                {
+                    "scopes": [
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "MentionMe",
+                            "description": "Sends message with @mention of the sender"
+                        },
+                        {
+                            "title": "Show Welcome",
+                            "description": "Shows the welcome card"
+                        },
+                        {
+                            "title": "MessageAllMembers",
+                            "description": "Send 1 to 1 message to all members of the current conversation"
+                        },
+                        {
+                            "title": "🤚Post A Question",
+                            "description": "Send a question to the moderator managed queue"
+                        }
+                    ]
+                }
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
