@@ -19,10 +19,9 @@ Moderator bot will add your question to a Cosmos DB collection based on Teams ch
 ## Setup bot locally
 If you would like to test and modify bot code. Follow the steps in this section.
 
-### Clone the project (project url subject to change)
+### Clone the project
 ```bash
-git clone https://github.com/beth-panx/snowdragon-simplebot
-cd snowdragon-simplebot
+cd bot
 npm install
 ```
 
