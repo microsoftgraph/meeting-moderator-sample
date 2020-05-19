@@ -67,7 +67,7 @@ Now that ngrok is running, you need to add this url to your AAD application redi
 
 ### 3. Update Teams manifest and install application
 
-To update the manifest, you will need to install the [Microsoft Team Extension](TODO) in VS code. Once you've installed the extension, open `.publish/Development.env` and replace the `baseUrl0` with your ngrok url. Save the file.
+To update the manifest, you will need to install the [Microsoft Team Extension](https://aka.ms/teams-toolkit) in VS code. Once you've installed the extension, open `.publish/Development.env` and replace the `baseUrl0` with your ngrok url. Save the file.
 
 Once the file is saved, the `Development.zip` package will be automatically updated. You can now use this package to install the application in Microsoft Teams:
 
