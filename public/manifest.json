@@ -1,0 +1,21 @@
+{
+	"dir" : "ltr",
+	"lang" : "en",
+	"name" : "Moderator",
+	"scope" : "/",
+	"display" : "standalone",
+	"start_url" : "/",
+	"short_name" : "Moderator",
+	"theme_color" : "#0078d4",
+	"description" : "Do you need help moderating small group breakouts in Microsoft Teams online meetings? Look no further!!! ;)",
+	"orientation" : "any",
+	"background_color" : "#0078d4",
+	"related_applications" : [],
+	"prefer_related_applications" : false,
+	"icons" : [
+		{
+			"src": "/logo192.png",
+			"sizes": "192x192"
+		}],
+	"url" : "/"
+}

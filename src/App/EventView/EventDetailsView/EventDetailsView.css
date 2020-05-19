@@ -1,0 +1,49 @@
+.EventDetailsContainer {
+    margin: 20px 0;
+}
+
+.EventDetails {
+    margin:30px 0 20px 0;
+}
+
+.EventDetail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.EventKey {
+    width: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #201F1E;
+    opacity: 0.5;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.EventValue {
+    font-size: 14px;
+    line-height: 20px;
+    color: #201F1E;
+    display: inline-block;
+    max-width: 430px;
+    word-break: break-all;
+    flex: 0 1 430px;
+}
+
+.JoinButton {
+    margin-top: 20px;
+    margin-left: -8px;
+}
+
+.ParticipantsList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.ParticipantsList .Participant {
+    width: 160px;
+    margin: 8px 30px 8px 0;
+    overflow: hidden;
+}

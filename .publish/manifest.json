@@ -1,0 +1,51 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.6",
+    "version": "{version}",
+    "showLoadingIndicator": false,
+    "id": "05569668-98ea-434f-9294-9767ec13a513",
+    "packageName": "com.moderator",
+    "developer": {
+        "name": "Contoso",
+        "websiteUrl": "{baseUrl0}/",
+        "privacyUrl": "{baseUrl0}/",
+        "termsOfUseUrl": "{baseUrl0}/"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "{appname}",
+        "full": "{fullappname}"
+    },
+    "description": {
+        "short": "Moderate large Microsoft Teams meetings",
+        "full": "The app helps you moderate large Microsoft Teams meeting with small group breakouts."
+    },
+    "accentColor": "#0078D4",
+    "configurableTabs": [
+        {
+            "configurationUrl": "{baseUrl0}/teamsconfig",
+            "canUpdateConfiguration": false,
+            "scopes": [
+                "groupchat"
+            ]
+        }
+    ],
+    "staticTabs": [
+        {
+            "entityId": "moderator",
+            "name": "Moderator",
+            "contentUrl": "{baseUrl0}/",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}

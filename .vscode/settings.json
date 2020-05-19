@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/da725df1-c7e2-42fa-9e98-73c61d7edc4f/resourceGroups/demos/providers/Microsoft.Web/sites/my-moderator",
+    "appService.deploySubpath": "build"
+}

@@ -1,0 +1,53 @@
+
+.Breakouts {
+    margin-top: 20px;
+    position: relative;
+}
+
+.BreakoutsTitleContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.BreakoutsTitleContainer .CardTitle {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.Breakouts .MessageTextField {
+    margin-top: 20px;
+    max-width: 430px;
+}
+
+.Breakouts .PlacedholderDescription {
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 10px 0 20px 0;
+}
+
+.Breakouts .MessageSendButtonContainer {
+    height: 32px;
+}
+
+.Breakouts .MessageSpinner {
+    justify-content: flex-start;
+}
+
+.Breakouts .BreakoutGroups {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.GroupActions {
+    height: 40px;
+    background: #F5F5F5;
+    border-radius: 2px;
+}
+
+/* .Breakouts .BreakoutsArchiveButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+} */

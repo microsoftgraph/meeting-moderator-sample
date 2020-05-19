@@ -1,0 +1,131 @@
+
+
+body {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F4F4F4;
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  background-color: #0078D4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  height: 48px;
+}
+
+.Event-title {
+  flex-grow: 1;
+}
+
+.App-title {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.AboutButton {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+.AboutButton:hover {
+  border-radius: 50%;
+}
+
+.App-content {
+  padding: 0 20px 20px 20px;
+}
+
+.App-header mgt-login {
+  --color: white;
+  --background-color--hover: white;
+  --color-hover: rgb(218, 218, 218);
+  margin: 0 12px 0 0;
+}
+
+.Card {
+  background: #FFFFFF;
+  box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.13), 0px 1.2px 3.6px rgba(0, 0, 0, 0.1);
+  border-radius: 2px; 
+  padding: 20px;
+}
+
+.Card .CardTitle {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.welcome {
+  margin: 40px 20px 20px 20px;
+  min-height: 40em;
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+  color: #201F1E;
+  min-width: 200px;
+}
+
+.welcome svg {
+  max-width: 100%;
+}
+
+.welcome h1 {
+  font-weight: 200;
+  margin: 0.5em 0;
+  line-height: 48px;
+  font-size: 48px;
+}
+
+.app-description {
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  max-width: 400px;
+}
+
+.App-content .welcome mgt-login {
+  background: #0078D4;
+  border-radius: 2px;
+  margin: 2em 0 0 0;
+  --color: white;
+  --background-color--hover: rgb(16, 110, 190);
+  --color-hover: #ffffff;
+}
+
+.HelpIcon {
+  font-weight: bold;
+  font-size: 12px;
+  /* margin-right: -2em; */
+  background: #ffffff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.HelpIcon .ms-Icon {
+  color: #0078D4;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.InstallButton {
+  margin-right: 40px;
+}
