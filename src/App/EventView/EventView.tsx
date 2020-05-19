@@ -3,10 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { Pivot, PivotItem, MessageBar, MessageBarType, Spinner, SpinnerSize } from '@fluentui/react';
 import { BreakoutView } from './BreakoutView/BreakoutView';
 import { useParams } from 'react-router-dom';
+import { QuestionQueueView } from './QuestionQueueView/QuestionQueue';
 import { EventDetailsView } from './EventDetailsView/EventDetailsView';
 import { getEventFromId } from '../../utils/graph.events';
 import { getChatParticipantsForOnlineMeeting } from '../../utils/graph.onlineMeetings';
 import { GraphEvent } from '../../utils/types';
+
+
 
 export function EventView() {
     let { id } = useParams();
@@ -59,6 +62,9 @@ export function EventView() {
         <Pivot defaultSelectedKey='0'>
             <PivotItem headerText='Breakouts'>
                 <BreakoutView event={event} attendees={participants}></BreakoutView>
+            </PivotItem>
+            <PivotItem headerText='Question Queue'>
+                <QuestionQueueView event={event} />
             </PivotItem>
             <PivotItem headerText='Details'>
                 <EventDetailsView event={event} participants={participants}></EventDetailsView>

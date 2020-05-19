@@ -1,0 +1,43 @@
+h2.title {
+    font-weight: normal;
+
+}
+
+.description {
+    margin: 2em 0;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 6.4px 14.4px rgba(0, 0, 0, 0.13), 0px 1.2px 3.6px rgba(0, 0, 0, 0.1);
+    border-radius: 2px; 
+    padding: 2em;
+}
+
+.question-list.card {
+    padding: 0;
+    max-width: 70em;
+}
+
+.question {
+    padding: 1em;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.question mgt-person {
+    min-width: 10em;
+}
+
+.question-text {
+    font-size: 14px;
+    flex-grow: 1;
+    margin: 0 2em;
+}
+
+.question-answer {
+    min-width: 7em;
+}
