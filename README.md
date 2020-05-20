@@ -78,3 +78,11 @@ Once the file is saved, the `Development.zip` package will be automatically upda
 ## Using the Moderator Bot
 
 This sample also includes a helpful bot for helping the moderator keep track of questions from the attendees. See the `bot` branch for description and instructions on deploying and running the bot in your Azure Subscription.
+
+
+## Useful Links
+- Microsoft Graph Dev Portal https://graph.developer.com/ 
+- Graph Explorer https://aka.ms/GE 
+- Microsoft Graph Toolkit https://aka.ms/mgt 
+- Microsoft Graph Toolkit Blog Series https://aka.ms/mgtLap
+- Microsoft Teams Dev Portal https://developer.microsoft.com/en-us/microsoft-teams
