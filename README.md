@@ -6,6 +6,8 @@ This sample demonstrates usage of Microsoft Graph to implement small group break
 
 The sample is a web application built with React and Microsoft Graph Toolkit. The app can run as a web app in the browser, a personal or group tab app in Microsoft Teams, or a Progressive Web app on most modern desktop and mobile operating systems.
 
+[Watch the live stream where we showed how the app was built](https://www.youtube.com/playlist?list=PLWZJrkeLOrbYL7tFQJ-HY6Q9FZGmqSldH)
+
 ## Prerequisites
 
 * [NodeJS](https://nodejs.org/en/download/)
