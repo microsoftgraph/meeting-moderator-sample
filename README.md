@@ -21,7 +21,7 @@ In a terminal:
 ```bash
 git clone https://github.com/microsoftgraph/meeting-moderator-sample
 
-cd moderator
+cd meeting-moderator-sample
 
 npm install
 
