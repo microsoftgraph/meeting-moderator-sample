@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import * as FluentUI from '@fluentui/react';
-import { PersonCardInteraction } from '@microsoft/mgt';
+import { PersonCardInteraction, PersonViewType } from '@microsoft/mgt';
 import { Person } from '@microsoft/mgt-react';
 
 import { GraphEvent, GroupInfo } from '../../../utils/types';
@@ -269,7 +269,7 @@ const BreakoutGroup = (props: {group: GroupInfo}) => {
             <div className="GroupPeople">
                 {props.group.members.map((p, i) => 
                     <div className="GroupPerson" key={i}>
-                        <Person personDetails={p} showPresence avatarSize="large" fetchImage showName personCardInteraction={PersonCardInteraction.hover} />
+                        <Person personDetails={p} showPresence avatarSize="large" fetchImage view={PersonViewType.oneline} personCardInteraction={PersonCardInteraction.hover} />
                     </div>
                 )}
                 <div className="GroupActions">

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
-import { PersonCardInteraction } from '@microsoft/mgt';
+import { PersonCardInteraction, PersonViewType } from '@microsoft/mgt';
 import { Person } from '@microsoft/mgt-react';
 import { ActionButton } from '@fluentui/react';
 
@@ -49,7 +49,7 @@ export const EventDetailsView = (props: {event: GraphEvent, participants: Micros
             <div className="ParticipantsList">
                 {props.participants.map((p,i) => (
                     <div className="Participant" key={i}>
-                        <Person personDetails={p} showPresence avatarSize="large" fetchImage showName personCardInteraction={PersonCardInteraction.hover} />
+                        <Person personDetails={p} showPresence avatarSize="large" fetchImage view={PersonViewType.oneline} personCardInteraction={PersonCardInteraction.hover} />
                     </div>
                 ))}
             </div>

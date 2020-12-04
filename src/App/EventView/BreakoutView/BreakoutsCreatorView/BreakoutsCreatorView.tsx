@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import { PrimaryButton, IconButton, Slider } from '@fluentui/react';
 import { Person, PeoplePicker } from '@microsoft/mgt-react';
-import { PersonCardInteraction } from "@microsoft/mgt";
+import { PersonCardInteraction, PersonViewType } from "@microsoft/mgt";
 
 import {ReactComponent as MoveIcon} from '../../../../images/move.svg';
 import './BreakoutsCreatorView.css'
@@ -63,7 +63,7 @@ export const BreakoutsCreatorView = (props: BreakoutCreatorViewProps) => {
             <div className="ModeratorsList">
                 {props.moderators.map((p, i) => 
                     <div className="ModeratorPerson Card" key={i}>
-                        <Person personDetails={p} showPresence avatarSize="large" fetchImage showName personCardInteraction={PersonCardInteraction.click} />
+                        <Person personDetails={p} showPresence avatarSize="large" fetchImage view={PersonViewType.oneline} personCardInteraction={PersonCardInteraction.click} />
                         {props.currentSignedInUser.id === p.id ? '' : (
                             <div className="ModeratorCloseIconButton">
                                 <IconButton  iconProps={{iconName: 'ChromeClose'}} onClick={(e) => handleRemoveClicked(p)}></IconButton>
@@ -87,7 +87,7 @@ const GroupsCreatorGroupView = (props: {groupMembers: MicrosoftGraph.User[], nam
             {props.groupMembers.map((p, i) => 
                 <div className="GroupPerson" key={i}>
                     <MoveIcon className="GroupPersonMoveIcon"></MoveIcon>
-                    <Person personDetails={p} showPresence avatarSize="large" fetchImage showName personCardInteraction={PersonCardInteraction.click} />
+                    <Person personDetails={p} showPresence avatarSize="large" fetchImage view={PersonViewType.oneline} personCardInteraction={PersonCardInteraction.click} />
                 </div>
             )}
         </div>
