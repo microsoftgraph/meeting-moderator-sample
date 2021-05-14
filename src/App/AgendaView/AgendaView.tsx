@@ -2,8 +2,8 @@ import React from 'react';
 
 import { useHistory } from "react-router-dom";
 import { ActionButton } from '@fluentui/react';
-import { PersonCardInteraction, Providers } from '@microsoft/mgt';
-import { Agenda, MgtTemplateProps, People } from '@microsoft/mgt-react';
+import { Providers } from '@microsoft/mgt-element';
+import { Agenda, MgtTemplateProps, People, PersonCardInteraction } from '@microsoft/mgt-react';
 
 import { getDateHeader, getFormatedTime } from '../../utils/date';
 import { GraphEvent } from '../../utils/types';

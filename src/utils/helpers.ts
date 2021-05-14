@@ -1,4 +1,4 @@
-import { TeamsHelper } from "@microsoft/mgt"
+import { TeamsHelper } from "@microsoft/mgt-element"
 import * as MicrosoftTeams from '@microsoft/teams-js';
 
 export const openTeamsUrl = (url: string) => {

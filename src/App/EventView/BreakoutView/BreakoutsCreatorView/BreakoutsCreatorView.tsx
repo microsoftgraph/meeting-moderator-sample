@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import { PrimaryButton, IconButton, Slider } from '@fluentui/react';
-import { Person, PeoplePicker } from '@microsoft/mgt-react';
-import { PersonCardInteraction, PersonViewType } from "@microsoft/mgt";
+import { Person, PeoplePicker, PersonCardInteraction, PersonViewType } from '@microsoft/mgt-react';
 
 import {ReactComponent as MoveIcon} from '../../../../images/move.svg';
 import './BreakoutsCreatorView.css'

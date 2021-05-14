@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import { Providers, ProviderState, TeamsHelper } from '@microsoft/mgt';
+import { Providers, ProviderState, TeamsHelper } from '@microsoft/mgt-element';
 import { Switch, Route, BrowserRouter, useHistory } from "react-router-dom";
 import { MgtTemplateProps, Login, Person } from '@microsoft/mgt-react';
 import { initializeIcons, IconButton, Spinner, SpinnerSize } from '@fluentui/react';

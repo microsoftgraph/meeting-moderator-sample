@@ -1,8 +1,7 @@
 import React from 'react';
 
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
-import { PersonCardInteraction, PersonViewType } from '@microsoft/mgt';
-import { Person } from '@microsoft/mgt-react';
+import { Person, PersonCardInteraction, PersonViewType } from '@microsoft/mgt-react';
 import { ActionButton } from '@fluentui/react';
 
 import { GraphEvent } from '../../../utils/types';

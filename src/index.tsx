@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App/App';
-import * as serviceWorker from './serviceWorker';
 
-import {Providers, MsalProvider, TeamsProvider} from '@microsoft/mgt';
+import {Msal2Provider} from '@microsoft/mgt-msal2-provider';
+import {TeamsProvider} from '@microsoft/mgt-teams-provider';
+import { Providers } from '@microsoft/mgt-element';
+
 import * as MicrosoftTeams from "@microsoft/teams-js";
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 
 let provider;
-const clientId = '172ac0f4-104f-4765-9ccf-3df699905899';
+const clientId = 'eb3b6c7d-41fa-4607-b010-3ddd0a1f071b';
 
 const scopes = [ 
   'user.read',
@@ -28,7 +30,7 @@ if (TeamsProvider.isAvailable) {
     authPopupUrl: '/teamsauth'
   })
 } else {
-  provider = new MsalProvider({
+  provider = new Msal2Provider({
     clientId,
     scopes,
     redirectUri: window.location.origin

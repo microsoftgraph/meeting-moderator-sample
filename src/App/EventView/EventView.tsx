@@ -34,6 +34,10 @@ export function EventView() {
                 }
 
                 let attendees = await getChatParticipantsForOnlineMeeting(event.onlineMeeting.joinUrl);
+
+                // chatparticipant id is different that org id
+                // mgt components expect id to be the actual user id
+                attendees = attendees.map(a => {return {...a, id: a.userId}})
                 
                 setEvent(event);
                 setParticipants(attendees);

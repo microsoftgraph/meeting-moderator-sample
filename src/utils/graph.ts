@@ -1,4 +1,4 @@
-import { Providers, ProviderState } from '@microsoft/mgt';
+import { Providers, ProviderState } from '@microsoft/mgt-element';
 
 export const getClient = () => {
     if (Providers.globalProvider.state === ProviderState.SignedIn) {

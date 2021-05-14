@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 import * as FluentUI from '@fluentui/react';
-import { PersonCardInteraction, PersonViewType } from '@microsoft/mgt';
-import { Person } from '@microsoft/mgt-react';
+import { Person, PersonCardInteraction, PersonViewType } from '@microsoft/mgt-react';
 
 import { GraphEvent, GroupInfo } from '../../../utils/types';
 import { getEventExtension, updateEventExtension } from '../../../utils/graph.events';
