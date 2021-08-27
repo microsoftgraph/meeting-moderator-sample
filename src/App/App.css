@@ -52,7 +52,7 @@ body {
 }
 
 .App-header mgt-login {
-  --color: white;
+  --button-color: white;
   --background-color--hover: white;
   --color-hover: rgb(218, 218, 218);
   margin: 0 12px 0 0;
@@ -106,7 +106,7 @@ body {
   background: #0078D4;
   border-radius: 2px;
   margin: 2em 0 0 0;
-  --color: white;
+  --button-color: white;
   --background-color--hover: rgb(16, 110, 190);
   --color-hover: #ffffff;
 }
